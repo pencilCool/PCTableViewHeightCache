@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		ECF8D9BF1ED9DE1E00E5D6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9BE1ED9DE1E00E5D6E5 /* AppDelegate.swift */; };
-		ECF8D9C11ED9DE1E00E5D6E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9C01ED9DE1E00E5D6E5 /* ViewController.swift */; };
 		ECF8D9C41ED9DE1E00E5D6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D9C21ED9DE1E00E5D6E5 /* Main.storyboard */; };
 		ECF8D9C61ED9DE1E00E5D6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D9C51ED9DE1E00E5D6E5 /* Assets.xcassets */; };
 		ECF8D9C91ED9DE1E00E5D6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D9C71ED9DE1E00E5D6E5 /* LaunchScreen.storyboard */; };
 		ECF8D9D41ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9D31ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheTests.swift */; };
 		ECF8D9DF1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9DE1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheUITests.swift */; };
+		ECF8D9ED1ED9DF0800E5D6E5 /* UITableView+PCTemplateLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9EC1ED9DF0800E5D6E5 /* UITableView+PCTemplateLayoutCell.swift */; };
+		ECF8D9EF1EDAD35400E5D6E5 /* UITableView+PCKeyedHeightCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9EE1EDAD35400E5D6E5 /* UITableView+PCKeyedHeightCache.swift */; };
+		ECF8D9F11EDAD3E000E5D6E5 /* UITableView+FDTemplateLayoutCellDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9F01EDAD3E000E5D6E5 /* UITableView+FDTemplateLayoutCellDebug.swift */; };
+		ECF8D9F41EDAD47A00E5D6E5 /* UITableView+PCIndexPathHeightCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9F31EDAD47A00E5D6E5 /* UITableView+PCIndexPathHeightCache.swift */; };
+		ECF8D9F61EDBB7E800E5D6E5 /* PCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9F51EDBB7E800E5D6E5 /* PCTableViewController.swift */; };
+		ECF8D9F81EDBC04B00E5D6E5 /* PCFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9F71EDBC04B00E5D6E5 /* PCFeedCell.swift */; };
+		ECF8D9FA1EDBC2B300E5D6E5 /* PCFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D9F91EDBC2B300E5D6E5 /* PCFeedEntity.swift */; };
+		ECF8D9FC1EDBECAF00E5D6E5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D9FB1EDBECAF00E5D6E5 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		ECF8D9BB1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTableViewHeightCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8D9BE1ED9DE1E00E5D6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECF8D9C01ED9DE1E00E5D6E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECF8D9C31ED9DE1E00E5D6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF8D9C51ED9DE1E00E5D6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF8D9C81ED9DE1E00E5D6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		ECF8D9DA1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTableViewHeightCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8D9DE1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableViewHeightCacheUITests.swift; sourceTree = "<group>"; };
 		ECF8D9E01ED9DE1E00E5D6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF8D9EC1ED9DF0800E5D6E5 /* UITableView+PCTemplateLayoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PCTemplateLayoutCell.swift"; sourceTree = "<group>"; };
+		ECF8D9EE1EDAD35400E5D6E5 /* UITableView+PCKeyedHeightCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PCKeyedHeightCache.swift"; sourceTree = "<group>"; };
+		ECF8D9F01EDAD3E000E5D6E5 /* UITableView+FDTemplateLayoutCellDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+FDTemplateLayoutCellDebug.swift"; sourceTree = "<group>"; };
+		ECF8D9F31EDAD47A00E5D6E5 /* UITableView+PCIndexPathHeightCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PCIndexPathHeightCache.swift"; sourceTree = "<group>"; };
+		ECF8D9F51EDBB7E800E5D6E5 /* PCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PCTableViewController.swift; path = ../PCTableViewController.swift; sourceTree = "<group>"; };
+		ECF8D9F71EDBC04B00E5D6E5 /* PCFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCFeedCell.swift; sourceTree = "<group>"; };
+		ECF8D9F91EDBC2B300E5D6E5 /* PCFeedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCFeedEntity.swift; sourceTree = "<group>"; };
+		ECF8D9FB1EDBECAF00E5D6E5 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,16 @@
 		ECF8D9BD1ED9DE1E00E5D6E5 /* SwiftTableViewHeightCache */ = {
 			isa = PBXGroup;
 			children = (
+				ECF8D9F21EDAD41800E5D6E5 /* PCTableViewHeightCache */,
 				ECF8D9BE1ED9DE1E00E5D6E5 /* AppDelegate.swift */,
-				ECF8D9C01ED9DE1E00E5D6E5 /* ViewController.swift */,
+				ECF8D9F51EDBB7E800E5D6E5 /* PCTableViewController.swift */,
+				ECF8D9F71EDBC04B00E5D6E5 /* PCFeedCell.swift */,
+				ECF8D9F91EDBC2B300E5D6E5 /* PCFeedEntity.swift */,
 				ECF8D9C21ED9DE1E00E5D6E5 /* Main.storyboard */,
 				ECF8D9C51ED9DE1E00E5D6E5 /* Assets.xcassets */,
 				ECF8D9C71ED9DE1E00E5D6E5 /* LaunchScreen.storyboard */,
 				ECF8D9CA1ED9DE1E00E5D6E5 /* Info.plist */,
+				ECF8D9FB1EDBECAF00E5D6E5 /* data.json */,
 			);
 			path = SwiftTableViewHeightCache;
 			sourceTree = "<group>";
@@ -123,6 +141,17 @@
 				ECF8D9E01ED9DE1E00E5D6E5 /* Info.plist */,
 			);
 			path = SwiftTableViewHeightCacheUITests;
+			sourceTree = "<group>";
+		};
+		ECF8D9F21EDAD41800E5D6E5 /* PCTableViewHeightCache */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8D9EC1ED9DF0800E5D6E5 /* UITableView+PCTemplateLayoutCell.swift */,
+				ECF8D9EE1EDAD35400E5D6E5 /* UITableView+PCKeyedHeightCache.swift */,
+				ECF8D9F01EDAD3E000E5D6E5 /* UITableView+FDTemplateLayoutCellDebug.swift */,
+				ECF8D9F31EDAD47A00E5D6E5 /* UITableView+PCIndexPathHeightCache.swift */,
+			);
+			name = PCTableViewHeightCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +267,7 @@
 				ECF8D9C91ED9DE1E00E5D6E5 /* LaunchScreen.storyboard in Resources */,
 				ECF8D9C61ED9DE1E00E5D6E5 /* Assets.xcassets in Resources */,
 				ECF8D9C41ED9DE1E00E5D6E5 /* Main.storyboard in Resources */,
+				ECF8D9FC1EDBECAF00E5D6E5 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF8D9C11ED9DE1E00E5D6E5 /* ViewController.swift in Sources */,
+				ECF8D9F61EDBB7E800E5D6E5 /* PCTableViewController.swift in Sources */,
+				ECF8D9FA1EDBC2B300E5D6E5 /* PCFeedEntity.swift in Sources */,
+				ECF8D9F81EDBC04B00E5D6E5 /* PCFeedCell.swift in Sources */,
+				ECF8D9ED1ED9DF0800E5D6E5 /* UITableView+PCTemplateLayoutCell.swift in Sources */,
+				ECF8D9EF1EDAD35400E5D6E5 /* UITableView+PCKeyedHeightCache.swift in Sources */,
+				ECF8D9F41EDAD47A00E5D6E5 /* UITableView+PCIndexPathHeightCache.swift in Sources */,
+				ECF8D9F11EDAD3E000E5D6E5 /* UITableView+FDTemplateLayoutCellDebug.swift in Sources */,
 				ECF8D9BF1ED9DE1E00E5D6E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +550,7 @@
 				ECF8D9E51ED9DE1E00E5D6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECF8D9E61ED9DE1E00E5D6E5 /* Build configuration list for PBXNativeTarget "SwiftTableViewHeightCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +559,7 @@
 				ECF8D9E81ED9DE1E00E5D6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECF8D9E91ED9DE1E00E5D6E5 /* Build configuration list for PBXNativeTarget "SwiftTableViewHeightCacheUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +568,7 @@
 				ECF8D9EB1ED9DE1E00E5D6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
