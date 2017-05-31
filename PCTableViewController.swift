@@ -22,7 +22,7 @@ class PCTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.pc_debugLogEnable = true
-        // cache defugae
+    
         self.segementControl.selectedSegmentIndex = PCSimulatedCacheMode.cacheByIndexPath.rawValue
         buildTestData {
             self.feedEntitySections.append(self.prototypeEntitiesFromJSON)
@@ -55,15 +55,12 @@ class PCTableViewController: UITableViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+
         return self.feedEntitySections.count
     }
 
@@ -119,7 +116,7 @@ class PCTableViewController: UITableViewController {
     }
     
     @IBAction func action(_ sender: Any) {
-       let controller  = UIAlertController(title: "action", message: "hheda", preferredStyle: .actionSheet)
+       let controller  = UIAlertController(title: "Action", message: "", preferredStyle: .actionSheet)
         
         controller.addAction(UIAlertAction(title: "Insert a row", style: .default){ _ in
             self.insertRow()
@@ -134,6 +131,14 @@ class PCTableViewController: UITableViewController {
             controller.dismiss(animated: true, completion: nil)
         })
         self.present(controller, animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            var mutableEntities = feedEntitySections[indexPath.section]
+            mutableEntities.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
     
     func randomEntity() -> PCFeedEntity {

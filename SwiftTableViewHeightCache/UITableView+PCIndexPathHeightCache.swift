@@ -272,16 +272,17 @@ extension UITableView {
     {
         if pc_indexPathHeightCache.automaticallyInvalidateEnabled {
             pc_indexPathHeightCache.buildCachesAtIndexPathsIfNeeded(indexPaths)
-            var mutableIndexSetsToRemove: [Int: Set<Int>] = [:]
+            var mutableIndexSetsToRemove: [Int: NSMutableIndexSet] = [:]
             indexPaths.forEach{ indexPath in
                var mutableIndexSet = mutableIndexSetsToRemove[indexPath.section]
                 if mutableIndexSet == nil {
-                    mutableIndexSet = Set()
+                    mutableIndexSet = NSMutableIndexSet(indexSet: [])
                     mutableIndexSetsToRemove[indexPath.section] = mutableIndexSet
                 }
-//                mutableIndexSet.
-//                mutableIndexSetsToRemove[indexPath.section].
-                
+                mutableIndexSet!.add(indexPath.row)
+            }
+            mutableIndexSetsToRemove.forEach{ (key: Int, value: NSMutableIndexSet) in
+
             }
         }
         self.pc_deleteRows(at: indexPaths, with: animation)
